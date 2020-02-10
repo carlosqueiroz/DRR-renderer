@@ -58,3 +58,10 @@ RUN cd /opt && wget https://codeload.github.com/opencv/opencv/zip/$OPENCV -O ope
 && make -j4 && make install \
 && ldconfig
 
+WORKDIR /mycode
+COPY cmake/FindEigen3.cmake /mycode/cmake/FindEigen3.cmake
+COPY *.h /mycode/
+COPY *.cpp /mycode/
+COPY *.txt /mycode/
+RUN cmake .;make install;
+

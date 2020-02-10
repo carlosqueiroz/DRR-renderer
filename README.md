@@ -12,20 +12,15 @@ The .mhd standard is not fixed, therefore it might happen that the CT header use
 
 ### Build instructions
 
-* setup developer environment via docker
+* build DRR generator with docker
+
 ```
     cd Docker
     docker build -t drr .
 ```
-* build DRRgenerator within docker
-```
-    docker run -it -v $MYCODE:/mycode drr /bin/bash
-    cd /mycode
-    cmake .;make install;
-```
-### Generate DRR
 
-* generate drr within docker given mhd and raw input paths, output png path, and additional parameters (see main.cpp for detail).
+* Generate DRR with built docker, given mhd and raw input paths, output png path and additional parameters (see main.cpp for detail).
+
 ```
-    DRRgenerator lola11-55.mhd lola11-55.raw out.png 0 0 0 -90 0 0 0 512 512 -1000 -1100 2048 2048 256 256
+    docker run -v /myimg:/mytmp drr /bin/bash -c "/mycode/DRRgenerator /mytmp/VESSEL12_01.mhd /mytmp/VESSEL12_01.raw /mytmp/out.png 0 0 0 -90 0 0 0 512 512 0 -1000 1500 1500 256 256"
 ```
