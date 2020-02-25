@@ -7,6 +7,7 @@ The .mhd standard is not fixed, therefore it might happen that the CT header use
 #### References
 
 [![DOI](https://zenodo.org/badge/88970535.svg)](https://zenodo.org/badge/latestdoi/88970535)
+https://zenodo.org/badge/latestdoi/88970535
 
 Stefan, P., Habert, S., Winkler, A., Lazarovici, M., Fürmetz, J., Eck, U., & Navab, N. (2018). A radiation-free mixed-reality training environment and assessment concept for C-arm-based surgery. International journal of computer assisted radiology and surgery, 13(9), 1335-1344.
 
