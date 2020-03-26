@@ -20,12 +20,12 @@ Stefan, P., Habert, S., Winkler, A., Lazarovici, M., Fürmetz, J., Eck, U., & Na
 * build DRR generator with docker
 
 ```
-    cd Docker
-    docker build -t drr .
+    docker-compose build && docker-compose up -d 
+    docker-compose exec drr bash
 ```
 
 * Generate DRR with built docker, given mhd and raw input paths, output png path and additional parameters (see main.cpp for detail).
 
 ```
-    docker run -v /myimg:/mytmp drr /bin/bash -c "/mycode/DRRgenerator /mytmp/VESSEL12_01.mhd /mytmp/VESSEL12_01.raw /mytmp/out.png 0 0 0 -90 0 0 0 512 512 0 -1000 1500 1500 256 256"
+    DRRgenerator /sample/drr.mhd /sample/drr.zraw /sample/out.png 0 0 0 -90 0 0 0 512 512 0 -1000 1500 1500 256 256
 ```

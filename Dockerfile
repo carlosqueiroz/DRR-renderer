@@ -65,3 +65,5 @@ COPY *.cpp /mycode/
 COPY *.txt /mycode/
 RUN cmake .;make install;
 
+CMD sleep infinity
+

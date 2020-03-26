@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  drr:
+    build: ./
+    volumes:
+      - ./sample:/mytmp
+volumes:
+  db:
