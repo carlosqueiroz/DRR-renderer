@@ -27,5 +27,5 @@ Stefan, P., Habert, S., Winkler, A., Lazarovici, M., Fürmetz, J., Eck, U., & Na
 * Generate DRR with built docker, given mhd and raw input paths, output png path and additional parameters (see main.cpp for detail).
 
 ```
-    DRRgenerator /sample/drr.mhd /sample/drr.zraw /sample/out.png 0 0 0 -90 0 0 0 512 512 0 -1000 1500 1500 256 256
+    DRRgenerator /mytmp/1.mhd /mytmp/1.zraw /mytmp/1.png 0 0 0 -90 0 0 0 512 512 0 -1000 1500 1500 256 256
 ```
